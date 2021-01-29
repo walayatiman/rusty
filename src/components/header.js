@@ -1,6 +1,7 @@
 import PropTypes from "prop-types"
 import React, { useState } from "react"
 import logo from "../images/logo.svg"
+import { AnchorLink } from "gatsby-plugin-anchor-links";
 
 const Header = ({ siteTitle }) => {
   const [navbar, setNavbar] = useState(false)
@@ -12,7 +13,10 @@ const Header = ({ siteTitle }) => {
     }
   }
 
-  window.addEventListener("scroll", changeBg)
+  if (typeof window !== 'undefined') {
+    // Run the checkHeader function every time you scroll
+    window.addEventListener("scroll", changeBg)
+}
   return (
     <nav className={navbar ? "navbar active" : "navbar"}>
       <div className="container mx-auto lg:px-16 px-6  flex flex-wrap items-center lg:py-5 py-2">
@@ -25,7 +29,7 @@ const Header = ({ siteTitle }) => {
           />
         </div>
 
-        <label for="menu-toggle" className="pointer-cursor lg:hidden block">
+        <label htmlFor="menu-toggle" className="pointer-cursor lg:hidden block">
           <svg
             className="fill-current text-gray-900"
             xmlns="http://www.w3.org/2000/svg"
@@ -45,10 +49,10 @@ const Header = ({ siteTitle }) => {
         >
           <nav>
             <ul className="lg:flex items-center space-x-5 text-base text-gray-700 pt-4 lg:pt-0 mb-0">
-              <li className="text-base font-bold text-white">HOME</li>
-              <li className="text-base font-bold text-white">ABOUT</li>
-              <li className="text-base font-bold text-white">SERVICES</li>
-              <li className="text-base font-bold text-white">CONTACT</li>
+              <li className="text-base font-bold text-white"><AnchorLink to="#top" title="HOME" /></li>
+              <li className="text-base font-bold text-white"><AnchorLink to="#about" title="ABOUT" /></li>
+              <li className="text-base font-bold text-white"><AnchorLink to="#services" title="SERVICES" /></li>
+              <li className="text-base font-bold text-white"><AnchorLink to="#contact" title="CONTACT" /></li>
             </ul>
           </nav>
         </div>

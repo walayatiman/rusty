@@ -12,7 +12,7 @@ const Footer = () => {
   return (
     <footer className="w-full bg-purple px-6 pt-10">
       <div className="container mx-auto lg:px-16 lg:flex lg:flex-wrap md:flex md:flex-wrap">
-        <div class="lg:w-1/3 md:w-1/3 py-5 items-center flex flex-col md:items-start lg:items-start lg:p-5">
+        <div className="lg:w-1/3 md:w-1/3 py-5 items-center flex flex-col md:items-start lg:items-start lg:p-5">
           <img src={logo} alt="Logo" className="pb-5 w-2/3" />
           <p className="text-white font-bold">
             We focus on the needs of small to middle market businesses to
@@ -29,7 +29,7 @@ const Footer = () => {
             <FaInstagram size="2em" color="white" />
           </section>
         </div>
-        <div class="lg:w-1/3 md:w-1/3 py-5 items-center flex flex-col md:items-start lg:items-start lg:p-5">
+        <div className="lg:w-1/3 md:w-1/3 py-5 items-center flex flex-col md:items-start lg:items-start lg:p-5">
           <h2 className="text-3xl font-bold text-white pb-5">Contacts</h2>
 
           <span className="flex text-white items-center py-2">
@@ -57,7 +57,7 @@ const Footer = () => {
             The Land of Majestic Waterfalls
           </span>
         </div>
-        <div class="lg:w-1/3 md:w-1/3 py-5 items-center flex flex-col md:items-start lg:items-start lg:p-5">
+        <div className="lg:w-1/3 md:w-1/3 py-5 items-center flex flex-col md:items-start lg:items-start lg:p-5">
           <h2 className="text-3xl font-bold text-white pb-5">Services</h2>
           <p className="text-white text-lg pb-2">Web Design</p>
           <p className="text-white text-lg pb-2">Social Media</p>

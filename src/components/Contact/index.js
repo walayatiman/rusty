@@ -3,7 +3,7 @@ import call from "../../images/call.jpg"
 import contact from "../../images/contact.svg"
 const Contact = () => {
   return (
-    <div className="bg-cover" style={{ backgroundImage: `url(${call})` }}>
+    <div className="bg-cover" style={{ backgroundImage: `url(${call})` }} id="contact">
       <div className="bg-black bg-opacity-75 lg:py-56 py-20 px-6">
         <div className="container mx-auto">
           <div className="w-full">

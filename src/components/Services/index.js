@@ -8,7 +8,7 @@ import email from "../../images/mail.svg"
 
 const Services = () => {
   return (
-    <div className="bg-blue py-20 px-6 lg:py-56">
+    <div className="bg-blue py-20 px-6 lg:py-56" id="services">
       <div className="container mx-auto">
         <div className="w-full">
           <h4 className="text-center text-xl text-white uppercase font-medium my-3">

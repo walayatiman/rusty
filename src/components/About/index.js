@@ -3,7 +3,7 @@ import click from "../../images/click.svg"
 
 const About = () => {
   return (
-    <div className="py-20 px-6 lg:flex lg:items-center md:flex mb-4 container mx-auto lg:py-56 md:py-20 md:items-center static">
+    <div className="py-20 px-6 lg:flex lg:items-center md:flex mb-4 container mx-auto lg:py-56 md:py-20 md:items-center static" id="about">
       <div className="md:w-1/2 lg:w-1/2 px-6">
         <img src={click} alt="Click" />
       </div>
