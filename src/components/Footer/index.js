@@ -46,7 +46,7 @@ const Footer = () => {
               color="#FF687D"
               style={{ marginRight: 10 }}
             />
-            info@rustymace.ph
+            info@rustymace.dev
           </span>
           <span className="flex text-white items-center py-2">
             <FaMapMarkerAlt
