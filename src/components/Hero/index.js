@@ -1,9 +1,13 @@
 import React from "react"
 import phil from "../../images/phil.png"
+import { AnchorLink } from "gatsby-plugin-anchor-links"
 
 const Hero = () => {
   return (
-    <div className="lg:-mt-32 lg:pt-40 bg-gradient-to-b from-primary to-secondary" id="top">
+    <div
+      className="lg:-mt-32 lg:pt-40 bg-gradient-to-b from-primary to-secondary"
+      id="top"
+    >
       <div className="container mx-auto ">
         <div className="pt-20 px-6 md:pt-32 text-white">
           <h1 className="text-4xl primary font-bold text-center leading-10 lg:text-5xl lg:font-black md:font-black">
@@ -16,7 +20,7 @@ const Hero = () => {
           </h4>
           <div className="flex justify-center md:py-12 py-6">
             <button className="bg-purple hover:opacity-75 text-white font-bold py-4 px-6 rounded-full">
-              Learn More
+              <AnchorLink to="#about" title="Learn More" />
             </button>
           </div>
           <div className="flex justify-center py-6">

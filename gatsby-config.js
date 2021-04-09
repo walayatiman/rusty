@@ -1,9 +1,14 @@
 module.exports = {
-  siteMetadata: {
-    title: `Rusty Mace `,
-    description: `Digital Marketing and Web Design.`,
-    author: `@gatsbyjs`,
-  },
+      siteMetadata: {
+        title: 'Rusty Mace',
+        description: 'Digital Marketing and Web Design',
+        siteUrl: 'http://rustymace.dev/',
+        social: {
+            linkedin: 'https://www.linkedin.com/in/jebang/',
+            email: 'jebang@outlook.com'
+        },
+        rssFeedUrl: '/rss.xml'
+    },
   plugins: [
     `gatsby-plugin-react-helmet`,
     {

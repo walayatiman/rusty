@@ -26,7 +26,13 @@ const Footer = () => {
                 style={{ marginRight: 10 }}
               />
             </a>
-            <FaInstagram size="2em" color="white" />
+            <a href="https://www.instagram.com/rustymaceph/">
+              <FaInstagram
+                size="2em"
+                color="white"
+                style={{ marginRight: 10 }}
+              />
+            </a>
           </section>
         </div>
         <div className="lg:w-1/3 md:w-1/3 py-5 items-center flex flex-col md:items-start lg:items-start lg:p-5">
@@ -41,14 +47,6 @@ const Footer = () => {
             (063) 228 2362
           </span>
           <span className="flex text-white items-center py-2">
-            <FaRegEnvelope
-              size="1em"
-              color="#FF687D"
-              style={{ marginRight: 10 }}
-            />
-            info@rustymace.dev
-          </span>
-          <span className="flex text-white items-center py-2">
             <FaMapMarkerAlt
               size="1em"
               color="#FF687D"
@@ -60,10 +58,8 @@ const Footer = () => {
         <div className="lg:w-1/3 md:w-1/3 py-5 items-center flex flex-col md:items-start lg:items-start lg:p-5">
           <h2 className="text-3xl font-bold text-white pb-5">Services</h2>
           <p className="text-white text-lg pb-2">Web Design</p>
-          <p className="text-white text-lg pb-2">Social Media</p>
-          <p className="text-white text-lg pb-2">Content Writing</p>
-          <p className="text-white text-lg pb-2">SEO</p>
-          <p className="text-white text-lg pb-2">Email Marketing</p>
+          <p className="text-white text-lg pb-2">Web Development</p>
+          <p className="text-white text-lg pb-2">Ecommerce</p>
         </div>
       </div>
     </footer>
