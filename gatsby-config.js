@@ -1,7 +1,8 @@
 module.exports = {
   siteMetadata: {
     title: "Rusty Mace",
-    description: "Digital Marketing and Web Design",
+    description:
+      "We design attention grabbing creation, user-friendly website to help our clients achieve and maximize business growth and digital presence.",
     siteUrl: "http://rustymace.dev",
     social: {
       linkedin: "https://www.linkedin.com/in/jebang/",
