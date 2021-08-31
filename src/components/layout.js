@@ -16,6 +16,7 @@ import Footer from "./Footer"
 import About from "./About"
 import Services from "./Services"
 import Contact from "./Contact"
+import Seo from "../components/seo"
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -31,7 +32,7 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
+      <Seo title="Home" />
       <Hero />
       <About />
       <Services />
